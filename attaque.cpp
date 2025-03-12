@@ -1,6 +1,6 @@
-#include <iostream>;
+#include <iostream>
 using namespace std;
-#include <attaque.h>;
+#include "attaque.h"
 
 //creation d'une attaque aleatoire entre pierre, feuille et ciseaux
 attaque::attaque(){

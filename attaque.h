@@ -1,5 +1,5 @@
-#ifndef attaque.h
-#define attaque
+#ifndef attaque_h
+#define attaque_h
 
 #include <string>
 
@@ -12,5 +12,5 @@ class attaque{
     int getTypeAttaque() const;
     string getNomAttaque() const;
     bool resoudreAttaque(const attaque &a) const;
-}
+};
 #endif

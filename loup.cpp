@@ -4,6 +4,7 @@
 using namespace std;
 
 #include "loup.h"
+
 //le loup peut attaquer aleatoirement avec une pierre, une feuille ou des ciseaux
 loup::setAttaque(){
     attaque();

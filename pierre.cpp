@@ -4,7 +4,7 @@
 using namespace std;
 
 #include "pierre.h"
-#include 'attaque.h'
+#include "attaque.h"
 
 //elle attaque avec une pierre
 pierre::setAttaque(){

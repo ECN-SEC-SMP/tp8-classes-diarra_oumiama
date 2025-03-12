@@ -1,7 +1,9 @@
-#include<string>;
-##include<attaque.h>;
-#ifndef animal.h
-#define animal.h
+#include<string>
+#include "attaque.h"
+using namespace std;
+
+#ifndef animal_h
+#define animal_h
 
 
 class animal {
@@ -18,11 +20,11 @@ public:
     int getX() const;
     int getY() const;
     bool getVivant() const;
-    attaque getTypeAttaque() const;
+    attaque getAttaque() const;
     void setVivant(bool v);
-    void attaque(animal &a);
-    void setAttaque()=0;                //virtuelle pure
-    void deplace(int maxX, int maxY)=0; //virtuelle pure
+    void Attaque(animal& a);
+    virtual void setAttaque()=0;                //virtuelle pure
+    virtual void deplace(int maxX, int maxY)=0; //virtuelle pure
 
 };  
 #endif
