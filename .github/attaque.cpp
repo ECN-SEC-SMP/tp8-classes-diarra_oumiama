@@ -1,18 +1,6 @@
 #include <iostream>;
 using namespace std;
-
-class attaque{
-    private:
-    int type; //0:pierre, 1:feuille, 2:ciseaux
-    public:
-    attaque();// creer une attaque aleatoire
-    attaque(int t); //creer une attaque specifique
-    int getTypeAttaque() const;
-    string getNomAttaque() const;
-    bool resoudreAttaque(const attaque &a) const;
-}
-
-
+#include <attaque.h>;
 
 //creation d'une attaque aleatoire entre pierre, feuille et ciseaux
 attaque::attaque(){

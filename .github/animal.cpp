@@ -4,30 +4,7 @@
 using namespace std;
 
 #include attaque.h;
-
-//loup et pierre
-
-class animal {
-    string nom;
-    int X; //abscisse de ll'animal
-    int Y;  //ordonnée de l'animal
-    bool vivant;
-    attaque typeAttaque;
-
-public:
-    animal(int maxX, int maxY) ;
-    animal(int maxX, int maxY, int a, int b);
-    string getNom() const;
-    int getX() const;
-    int getY() const;
-    bool getVivant() const;
-    attaque getTypeAttaque() const;
-    void setVivant(bool v);
-    void attaque(animal &a);
-    void setAttaque();                //virtuelle pure
-    void deplace(int maxX, int maxY); //virtuelle pure
-
-};  
+#include animal.h;
 
 animal::animal(int maxX, int maxY)
 {   nom= "animal";
@@ -44,31 +21,40 @@ animal::animal(int maxX, int maxY, int a, int b)
     vivant = true;      //l'animal est vivant
     typeAttaque = attaque(); //l'animal a une attaque aleatoire
 }
-
+//revoie le nom de l'animal
 animal::getNom() const
 {
     return nom;
 }
-
+//renvoie l'abscisse de la cellule occupee par l'animal
 animal::getX() const
 {
     return X;
 }
-
+//renvoie l'ordonnée de la cellule occupee par l'animal
 animal::getY() const
 {
     return Y;
 }
-
+//renvoie vrai si l'animal est vivant
 animal::getVivant() const
 {
     return vivant;
 }
 
+//renvoie le type d'attaque de l'animal
+animal::getAttaque() const
+{
+    return typeAttaque;
+}
+//renvoie le type d'attaque de l'animal
 animal::setVivant(bool v)
 {
     vivant = v;
 }
 
-animal attaque(animal &a)
+//l'animal attaque l'animal passé en parametre ie a
+animal::attaque(animal &a){
+    
 
+}
