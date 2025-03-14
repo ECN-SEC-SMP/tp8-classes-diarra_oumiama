@@ -5,6 +5,18 @@ using namespace std;
 
 #include "loup.h"
 
+loup::loup(int maxX, int maxY):animal(maxX, maxY)
+{   
+    setNom("L");
+
+};
+
+loup::loup(int maxX, int maxY, int a, int b):animal(maxX, maxY,a,b)
+{   
+    setNom("L");
+
+};
+
 //le loup peut attaquer aleatoirement avec une pierre, une feuille ou des ciseaux
 loup::setAttaque(){
     attaque();

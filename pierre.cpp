@@ -6,6 +6,12 @@ using namespace std;
 #include "pierre.h"
 #include "attaque.h"
 
+
+pierre::pierre(int maxX, int maxY):animal(maxX, maxY)
+{   
+    setNom("P");
+
+};
 //elle attaque avec une pierre
 pierre::setAttaque(){
     attaque( 0)
